@@ -23,6 +23,8 @@ class ArrayCompactionTestCase(unittest.TestCase):
     def test_compact_returns_correct_output_on_valid_input_array(self):
         self.assertEqual(compact([1, 1, 3, 4, 4, 5, 6]), [1, 3, 4, 5, 6])
         self.assertEqual(compact([100, 71, 71, 71, 35, 16, 12, 9, 9, 0, 0]), [100, 71, 35, 16, 12, 9, 0])
+        self.assertEqual(compact([100, 100, 71, 71, 71, 35, 35, 16, 12, 9, 9, 8, 3, 3,  0, 0]),
+                         [100, 71, 35, 16, 12, 9, 8, 3, 0])
 
 if __name__ == '__main__':
     unittest.main()

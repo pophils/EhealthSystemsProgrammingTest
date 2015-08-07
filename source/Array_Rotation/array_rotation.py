@@ -1,6 +1,14 @@
 
 
 def rotate(input_array, n=0):
+    """
+    Function rotate an integer array by a specified N position
+    Rotation is done to avoid shifting elements which may lead to
+    poor performance in case of a large sized array.
+    :param input_array: array to be rotated
+    :param n: N position(s)
+    :return: rotated array
+    """
 
     # Edge cases
     if input_array is None:
