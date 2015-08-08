@@ -26,13 +26,15 @@ class CommonSubstringTestCase(unittest.TestCase):
         self.assertEqual(find_common_substring_linear('', 'string 2'), '')
 
     def test_find_common_substring_returns_correct_output_on_valid_input_strings(self):
-        self.assertEqual(find_common_substring_quadratic('ABCDEF', 'ABCDEFGH'), 'ABCDEF')
-        self.assertEqual(find_common_substring_quadratic('SABCDEF', 'FCZ3DRES'), 'SCDEF')
-        self.assertEqual(find_common_substring_quadratic('techcrunch', 'the next web'), 'tehn')
+        self.assertEqual(find_common_substring_quadratic('ABCDEF', 'ABCDEFGH'), 'abcdef')
+        self.assertEqual(find_common_substring_quadratic('SABCDEF', 'FCZ3DRES'), 'scdef')
+        self.assertEqual(find_common_substring_quadratic('techcrunch', 'the next web'), 'tehnh')
+        self.assertEqual(find_common_substring_quadratic('Microsoft azure', 'Amazon AWS'), 'mosoaz')
 
-        self.assertEqual(find_common_substring_linear('ABCDEF', 'ABCDEFGH'), 'ABCDEF')
-        self.assertEqual(find_common_substring_linear('SABCDEF', 'FCZ3DRES'), 'SCDEF')
-        self.assertEqual(find_common_substring_linear('techcrunch', 'the next web'), 'tehn')
+        self.assertEqual(find_common_substring_linear('ABCDEF', 'ABCDEFGH'), 'abcdef')
+        self.assertEqual(find_common_substring_linear('SABCDEF', 'FCZ3DRES'), 'scdef')
+        self.assertEqual(find_common_substring_linear('techcrunch', 'the next web'), 'tehnh')
+        self.assertEqual(find_common_substring_quadratic('Microsoft azure', 'Amazon AWS'), 'mosoaz')
 
 if __name__ == '__main__':
     unittest.main()
