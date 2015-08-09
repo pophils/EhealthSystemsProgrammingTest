@@ -2,7 +2,7 @@
 
 def compact(input_array):
     """
-    Function compacts an sorted integer array by removing duplicates in the array.
+    Function compacts a sorted integer array by removing duplicates in the array.
     Doing this naively by creating another list to hold filtered elements will pose a
     problem in performance and might leads to program crash if array is substantially
     large.
