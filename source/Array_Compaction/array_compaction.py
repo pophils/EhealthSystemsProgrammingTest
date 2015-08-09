@@ -5,7 +5,7 @@ def compact(input_array):
     Function compacts an sorted integer array by removing duplicates in the array.
     Doing this naively by creating another list to hold filtered elements will pose a
     problem in performance and might leads to program crash if array is substantially
-    large. Space complexity will be quadratic i.e O(n**2)
+    large.
 
     A better approach is to do the filtering in place without creating a new list or array.
     With this approach, complexity in terms of space and time will be linear i.e O(n)
